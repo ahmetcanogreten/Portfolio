@@ -2,7 +2,16 @@ services:
   nginx:
     image: nginx
     container_name: nginx
-    ports:
-      - "8082:80"
     volumes:
       - ./build/:/usr/share/nginx/html
+    networks:
+      - traefik-net
+    labels:
+      - "traefik.http.routers.wordpress.rule=Host(`ogreten.xyz`)"
+      - "traefik.http.routers.wordpress.entrypoints=websecure"
+      - "traefik.http.routers.wordpress.tls.certresolver=lets-encrypt"
+
+networks:
+  traefik-net:
+    name: traefik-net
+    external: true
