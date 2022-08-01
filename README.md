@@ -1,38 +1,14 @@
-# create-svelte
+# Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This repo contains source code for my portfolio website. It uses SvelteKit to render the website along with TypeScript and Tailwindcss. It's  statically (currently) built and deployed to my personal server to be server by NGINX. 
 
-## Creating a project
+This portfolio page is accessible on [ogreten.xyz](https://ogreten.xyz).
 
-If you're seeing this, you've probably already done this step. Congrats!
+Basically, It consists of **Who Am I**, **My Posts**, and **My Projects** pages. Who Am I page is a simple page that contains a short bio about me. My Posts page is a page that contains my latest posts on Medium. To retrieve Medium posts, it uses RSS. Lastly, My Projects page contains a list of all my projects available on GitHub. It uses GitHub API for retrieving those projects.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Future Improvements
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+For now, I'm still working on this portfolio page. I'm planning to add more features to it. I will update this list as I add and implement more features.
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- [ ] CI/CD for the website
+- [ ] Add Who Am I page
