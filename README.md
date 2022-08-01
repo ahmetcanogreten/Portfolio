@@ -1,5 +1,7 @@
 # Portfolio
 
+![COVER](COVER.png)
+
 This repo contains source code for my portfolio website. It uses SvelteKit to render the website along with TypeScript and Tailwindcss. It's  statically (currently) built and deployed to my personal server to be server by NGINX. 
 
 This portfolio page is accessible on [ogreten.xyz](https://ogreten.xyz).
